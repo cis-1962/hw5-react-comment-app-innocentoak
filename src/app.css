@@ -2,41 +2,114 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
+/* post styles */
+.post {
+  background: #333;
+  color: #fff;
+  margin-top: 2em;
+  margin-bottom: 2em;
   padding: 2em;
+  border-radius: px;
 }
 
-.read-the-docs {
-  color: #888;
+.post button {
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 13px;
+  align-items: left;
+
+}
+
+/* vote */
+.vote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* post content and container */
+.post-content {
+  text-align: left;
+}
+
+/* vote buttons */
+.upvote-button {
+  background-color: #64ebba;
+  color: #fff;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.downvote-button {
+  background-color: #eb646b;
+  color: #fff;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+
+/* post creator */
+.post-creator {
+  background: #292929;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.post-creator input,
+.post-creator textarea {
+  width: 90%;
+  padding: 1em;
+  margin-right: 2em;
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: left;
+}
+
+.post-creator {
+  text-align: left;
+  padding: 1em;
+}
+
+.post-creator textarea {
+  text-align: left;
+  margin-top: 1em;
+
+}
+
+.post-creator button {
+  background-color: #ffaf64;
+  color: #fff;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* error */
+.error {
+  color: #ff6b6b;
+}
+
+/* replies */
+.replies {
+  text-align: left;
+  margin-top: 1em;
+  border-left: 3px solid #ff8b64;
+  padding-left: 1em;
+
+}
+
+/* media */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .card,
+  .post,
+  .post-creator {
+    padding: 1em;
+  }
 }
